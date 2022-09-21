@@ -1,0 +1,249 @@
+/* font-family: 'Red Hat Display', sans-serif; */
+:root
+{
+--PaleBlue: hsl(225, 100%, 94%);
+--BrightBlue: hsl(245, 75%, 52%);
+--VeryPaleBlue: hsl(225, 100%, 98%);
+--DesaturatedBlue: hsl(224, 23%, 55%);
+--DarkBlue: hsl(223, 47%, 23%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--PaleBlue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat:repeat-x;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section
+{
+    margin: 1.25rem;
+    position: relative;
+    background-color:hsl(0, 0%, 100%);
+    width: 28rem;
+    height: 43.5rem;
+    border-radius: 1.3rem;
+    box-shadow: 0px 20px 25px 0px rgb(203, 213, 250);
+}
+
+.img img
+{
+    border-radius: 1.3rem 1.3rem 0 0 ;
+}
+
+.description
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1
+{
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+h2
+{
+    position: relative;
+    max-width: 20rem;
+    margin-left: 4rem;
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+    color: var(--DesaturatedBlue);
+    font-weight: 500;
+    top: 1.25rem;
+}
+
+.bg
+{
+    background-color:var(--VeryPaleBlue);
+    width: 22rem;
+    height: 6rem;
+    margin-top: 2.5rem;
+    margin-left: 2.8rem;
+    border-radius: 0.6rem;
+    opacity: 1;
+}
+
+svg
+{
+    position: absolute;
+    float: left;
+    left: 4.3rem;
+    top:  27.7rem;
+}
+
+.plan, .price
+{
+    position: relative;
+    left: -2.5rem;
+    top: -4.6rem;
+    line-height: 1.7rem;
+}
+
+.plan
+{
+    font-size: 1.04rem;
+    font-weight: 800;
+}
+
+.price
+{
+    color: var(--DesaturatedBlue);
+}
+
+a .change
+{
+    position: relative;
+    top: -7rem;
+    right: 4.5rem;
+    font-size: 0.91rem;
+    float: right;
+    color: var(--BrightBlue);
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+a .change:hover
+{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+button
+{
+    position: absolute;
+    width: 22rem;
+    height: 3.125rem;
+    background-color: var(--BrightBlue);
+    top: 34.3rem;
+    left: 3rem;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 1.3rem 1rem 0.06rem rgba(224, 224, 255, 1);
+}
+
+button:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.cancel
+{
+    position: absolute;
+    bottom: 2.7rem;
+    left: 11rem;
+    font-size: 0.93rem;
+    font-weight: 900;
+    color:var(--DesaturatedBlue);
+}
+
+.cancel:hover
+{
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution { font-size: 0.9rem; text-align: center; margin-top: 2.5rem;}
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
+
+@media screen and (max-width: 500px) 
+{
+    body 
+    {
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+    section 
+    {
+        width: 20.5rem;
+        height: 35.5rem;
+    }
+    .img img
+    {
+        width: 20.5rem;
+    }
+
+
+    h1
+    {
+        margin-top: 1.7rem;
+        font-size: 1.4rem;
+    }
+    
+    h2
+    {
+        max-width: 16rem;
+        margin-left: 2.4rem;
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+    }
+    
+    .bg
+    {
+        width: 17.5rem;
+        height: 5rem;
+        margin-top: 2.8rem;
+        margin-left: 1.5rem;
+    }
+    
+    svg
+    {
+        float: left;
+        left: 2.5rem;
+        top:  22.2rem;
+    }
+    
+    .plan, .price
+    {
+        left: -1rem;
+        top: -4rem;
+        line-height: 1.4rem;
+        font-size: 0.9rem;
+    }
+    
+    a .change
+    {
+        top: -6rem;
+        right: 2.5rem;
+        font-size: 0.8rem;
+    }
+    
+    button
+    {
+        width: 17.5rem;
+        top: 27.5rem;
+        left: 1.5rem;
+    }
+    
+    .cancel
+    {
+        bottom: 2rem;
+        left: 7.5rem;
+    }
+
+    .attribution
+    {
+        display: none;
+    }
+}
